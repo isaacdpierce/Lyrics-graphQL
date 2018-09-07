@@ -35,6 +35,16 @@ renderSongs() {
   }
 }
 
+const mutation = gql`
+  mutation DeleteSong($id: ID) {
+    deleteSong(id: $id) {
+      id
+    }
+  }
+`
 
 
-export default graphql(query)(SongList);
+
+export default graphql(mutation)(
+  graphql(query)(SongList)
+);
