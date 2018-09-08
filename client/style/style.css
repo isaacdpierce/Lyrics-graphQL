@@ -5,4 +5,22 @@
 
 .material-icons {
   cursor: pointer;
+  
+}
+
+.vote-box {
+  display: flex;
+  align-items: center;
+}
+
+.likes-num {
+  height: 27px;
+  width: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  background-color: rgb(59, 100, 76);
+  border-radius: 50px;
+  margin-right: 5px;
 }
